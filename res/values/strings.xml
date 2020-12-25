@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">爱动漫大赛</string>
+
+    
+    <string name="Comic_text_competition">动漫大赛</string>
+    <string name="Comic_text_impressive">优秀作品</string>
+    <string name="Comic_text_Cosplay">Cos随手拍</string>
+    
+    <string name="Comic_text_News">大赛新闻</string>
+    
+    <string name="Comic_text_colorsms">彩信</string>
+    <string name="Comic_text_comic">动漫</string>
+    <string name="Comic_text_actionmovie">动画</string>
+    
+    <string name="Index_text_index">首页</string>
+    <string name="Index_text_channel">频道</string>
+    <string name="Index_text_search">搜索</string>
+    <string name="Index_text_mycomic">我的动漫</string>
+    <string name="Index_text_more">更多</string>
+    
+    <string name="telecom_text_back">返回</string>
+    
+    <string name="competition_zone_text">大赛专区</string>
+    <string name="fine_display_text">精品展示</string>
+    <string name="cosplay_upload_text">随手拍上传</string>
+    <string name="anime_music_text">动漫音乐</string>
+    
+    <string name="upload_text_chooseworks">选择作品</string>
+    <string name="upload_text_workstitle">作品标题</string>
+    <string name="upload_text_worksintroduction">作品介绍</string>
+    <string name="upload_text_userinfo">用户信息</string>
+    
+    <string name="upload_text_submit">提交</string>
+    <string name="upload_text_preview">预览</string>
+    <string name="upload_text_browse">浏览</string>
+    
+    <string name="lbl_newsdetails_comefrom">来源:%1$s</string>
+    <string name="lbl_news_comment_nickname">昵称:</string>
+    <string name="lbl_news_comment_comment">评论</string>
+    <string name="lbl_news_allcomment">全部评论-</string>
+    <string name="user_comment">用户评论</string>
+    <string name="works_introduction">作品介绍</string>
+    <string name="txt_news_allcomment_number">%1$s条</string>
+    
+    <string name="works_details_author">作者:</string>
+    <string name="works_details_workssname">作品名称:</string>
+    <string name="works_details_worksnumber">编号:</string>
+    <string name="works_details_votenumber">投票数:</string>
+    
+    <string name="works_details_share">分享</string>
+    <string name="works_details_vote">投票</string>
+    
+    <string name="strInputAccHint">请输入手机号码</string>
+    <string name="strAccInputLabel">帐号</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="strNickNameInputLabel">昵称</string>
+    <string name="telecom_text_login">登    录</string>
+    <string name="telecom_text_register">注    册</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="auto_login">自动登录</string>
+    
+    <string name="telephone_number">手机号码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="validate_number">验证码</string>
+    <string name="get_validate_number">获取验证码</string>
+    
+    <string name="works_outlined">作品简述</string>
+    
+    <!-- User Info -->
+    <string name="user_text_username">姓名</string>
+    <string name="user_text_sex">性别</string>
+    <string name="user_text_phonenumber">电话</string>
+    <string name="user_text_qqnumber">QQ</string>
+    <string name="user_text_adress">地址</string>
+    
+    <string name="telecom_text_loading">正在加载，请稍候...</string>
+    <string name="login_status_logging_in">正在为您登录...</string>
+    <string name="get_status_validate_number">正在获取注册验证码...</string>
+    <string name="register_status_loading_in">正在为您注册..请稍候</string>
+    <string name="login_status_fail_null">帐号或密码为空...</string>
+    <string name="register_status_doublepassword_error">第一次输入的密码跟第二次输入的密码不一致</string>
+    <string name="register_status_validatenumber_isnull">验证码为空，请点击获取验证码...</string>
+    <string name="register_status_vlidatephone_isphonenumber">您输入的不是电话号码...请重新输入</string>
+    <string name="register_status_doublevlidatenumber_error">手机验证码错误...</string>
+</resources>

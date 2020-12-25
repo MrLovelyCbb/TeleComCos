@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="150.0px"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px" >
+
+        <EditText
+            android:id="@+id/login_edit_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@+id/faceImg"
+            android:background="@drawable/telecom_edit_login"
+            android:hint="@string/strInputAccHint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/login_edit_account"
+            android:layout_alignLeft="@+id/login_edit_account"
+            android:layout_alignTop="@+id/login_edit_account"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/strAccInputLabel"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+        
+        <ImageButton android:id="@+id/login_btn_opation"
+            	android:contentDescription="点击"
+				android:background="@drawable/more_select" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginRight="1.0dip"
+				android:layout_alignTop="@+id/login_edit_account"
+				android:layout_alignRight="@+id/login_edit_account"
+				android:layout_alignBottom="@+id/login_edit_account" />
+        
+        <EditText android:id="@+id/login_edit_pwd"
+				android:background="@drawable/telecom_edit_login" 
+				android:paddingLeft="45.0sp"
+				android:saveEnabled="true" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginRight="1.0dip"
+				android:maxLength="16" 
+				android:layout_below="@+id/login_edit_account"
+				android:layout_alignLeft="@+id/login_edit_account"
+				android:layout_alignRight="@+id/login_edit_account"
+				android:inputType="textPassword" />
+			<TextView 
+				android:textSize="16.0dip" 
+				android:textColor="#0071ab"
+				android:gravity="center_vertical" 
+				android:id="@+id/TextView02"
+				android:paddingLeft="7.0sp" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/strPswInputLabel"
+				android:layout_alignTop="@+id/login_edit_pwd"
+				android:layout_alignRight="@+id/TextView01"
+				android:layout_alignBottom="@+id/login_edit_pwd" />
+			
+			<Button 
+				android:id="@+id/login_btn_login"
+				android:background="@drawable/login_select"
+				android:layout_width="180dip"
+				android:layout_height="45.0px" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginTop="30dip"
+				android:layout_marginRight="12.0dip" 
+				android:text="@string/telecom_text_login"
+				android:layout_below="@+id/TextView02"
+				style="@style/telecom_textview_color" />
+			<Button android:id="@+id/login_btn_register"
+			    android:layout_width="wrap_content"
+			    android:layout_height="45.0px"
+			    android:layout_marginTop="30dip"
+			    android:layout_marginRight="12.0dip" 
+			    android:text="@string/telecom_text_register"
+			    android:layout_below="@+id/TextView02"
+			    android:background="@drawable/register_select"
+			    android:layout_toRightOf="@+id/login_btn_login"
+			    style="@style/telecom_txtcontent_textcolor" />
+			
+			<CheckBox android:textSize="16.0sp" 
+				style="@style/telecom_txtcontent_textcolor"
+				android:id="@+id/login_cb_savepwd" 
+				android:paddingLeft="25dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:checked="true" 
+				android:layout_marginLeft="30dip"
+				android:button="@drawable/telecom_btn_check"
+				android:text="@string/opt_remember"
+				android:layout_marginTop="30dip" 
+				android:layout_below="@+id/login_btn_login"
+				/>
+			
+			<CheckBox android:textSize="16.0sp" 
+				style="@style/telecom_txtcontent_textcolor"
+				android:id="@+id/login_auto_login" 
+				android:paddingLeft="25dp"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:checked="true" 
+				android:layout_marginLeft="50dip"
+				android:button="@drawable/telecom_btn_check"
+				android:text="@string/auto_login"
+				android:layout_marginTop="30dip" 
+				android:layout_below="@+id/login_btn_login"
+				android:layout_toRightOf="@+id/login_cb_savepwd"/>
+    </RelativeLayout>
+
+</LinearLayout>

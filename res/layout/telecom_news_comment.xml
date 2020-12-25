@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/telecom_topbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/telecom_lbl_nickname"
+            style="@style/telecom_txttitle_txtcolor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:text="@string/lbl_news_comment_nickname" />
+
+        <TextView
+            android:id="@+id/telecom_show_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="2132" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="3" />
+
+    <Button
+        android:id="@+id/news_comment_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/telecom_upload_submit_selector"
+        android:gravity="center"
+        android:text="@string/upload_text_submit" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/telecom_column_comment_background"
+        android:orientation="horizontal"
+        android:gravity="center|left" >
+
+        <TextView
+            style="@style/telecom_txttitle_txtcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="@string/lbl_news_allcomment" />
+
+        <TextView
+            android:id="@+id/allcomment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_news_allcomment_number" />
+    </LinearLayout>
+
+</LinearLayout>

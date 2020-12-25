@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    
+    <style name="Theme.Telecomflyyoung"/>
+    
+    <style name="Theme.NoBackground" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    
+    <style name="Theme.MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    
+    <style name="Theme.Transparent" parent="android:Theme">
+	    <item name="android:windowBackground">@null</item>
+	    <item name="android:windowIsTranslucent">false</item>
+	    <item name="android:windowContentOverlay">@null</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowIsFloating">true</item>
+	    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+       <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/telecom_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_button_index"
+                style="@style/main_tab_bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:checked="true"
+                android:drawableTop="@drawable/telecom_menu_index"
+                android:text="@string/Index_text_index" />
+
+            <RadioButton
+                android:id="@+id/radio_button_channel"
+                style="@style/main_tab_bottom"
+                android:layout_marginLeft="5dip"
+                android:drawableTop="@drawable/telecom_menu_channel"
+                android:text="@string/Index_text_channel" />
+
+            <RadioButton
+                android:id="@+id/radio_button_search"
+                style="@style/main_tab_bottom"
+                android:layout_marginLeft="5dip"
+                android:drawableTop="@drawable/telecom_menu_search"
+                android:text="@string/Index_text_search" />
+
+            <RadioButton
+                android:id="@+id/radio_button_mycomic"
+                style="@style/main_tab_bottom"
+                android:layout_marginLeft="5dip"
+                android:drawableTop="@drawable/telecom_menu_mycosplay"
+                android:text="@string/Index_text_mycomic" />
+
+            <RadioButton
+                android:id="@+id/radio_button_more"
+                style="@style/main_tab_bottom"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:drawableTop="@drawable/telecom_menu_more"
+                android:text="@string/Index_text_more" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

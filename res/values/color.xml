@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="telecom_color_white">#FFFFFF</drawable>
+    <drawable name="telecom_color_blue">#007ACF</drawable>
+</resources>

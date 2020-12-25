@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_tab_padding_up">1dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">1dip</dimen>
+    <dimen name="bottom_tab_font_size">12sp</dimen>
+    
+    <dimen name="popwindow_button_dimen">50dip</dimen>
+    
+    <dimen name="sgamer_font_size_normal">12sp</dimen>
+    <dimen name="sgamer_font_size_mdsize">14sp</dimen>
+    <dimen name="sgamer_font_size_ldsize">10sp</dimen>
+    <dimen name="sgamer_font_size_hdsize">16sp</dimen>
+</resources>

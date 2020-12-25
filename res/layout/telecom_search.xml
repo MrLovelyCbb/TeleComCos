@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true" >
+
+    <include layout="@layout/telecom_topbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_background"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/telecom_edittext_search"
+            android:layout_width="270dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/telecom_edittext_search"
+            android:id="@+id/telecom_imgbtn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/telecom_search_icon" />
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/telecom_search_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:dividerHeight="0dip"
+        android:divider="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        ></ListView>
+</LinearLayout>

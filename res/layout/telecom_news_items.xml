@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip"
+        >
+        
+        <TextView android:id="@+id/telecom_link_title"
+            android:layout_width="205dip"
+            android:layout_height="wrap_content"
+            android:text="LOL阿里攻略灵动与爆发的结合团战中的舞者"
+            android:textSize="12.0dp"
+            android:textColor="#606060"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        
+        <TextView android:id="@+id/telecom_date_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/telecom_link_title"
+            android:paddingLeft="5dip"
+            android:textSize="12.0dp"
+            android:textColor="#848486"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:text="2012-12-01"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

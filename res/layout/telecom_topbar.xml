@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/telecom_topbar_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lol_topbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telecom_text_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:background="@drawable/telecom_topbar_back_background"
+            android:textColor="#ff9c00" />
+
+        <TextView
+            android:id="@+id/lol_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/telecom_textview_color"
+            android:layout_centerInParent="true"
+            android:text="@string/Index_text_channel"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

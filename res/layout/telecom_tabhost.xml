@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dip"
+    android:layout_marginBottom="10dip"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radiotabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_tab_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/telecom_news_tabhost_newscomment_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="新闻评论"
+            android:textColor="#0071ab" />
+
+        <RadioButton
+            android:id="@+id/radio_tab_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/telecom_news_tabhost_newscomment_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="新闻内容"
+            android:textColor="#585858" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.5dip"
+        android:background="#e0e0e0" />
+
+</LinearLayout>

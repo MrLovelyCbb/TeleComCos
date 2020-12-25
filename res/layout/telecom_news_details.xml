@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/telecom_topbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+        
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_comment"/>
+        
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/works_introduction"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newsdetails_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="柯南新剧场版【第11个前锋】票房收入创史上新高"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/newsdetails_source"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/lbl_newsdetails_comefrom"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/newsdetails_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="2012-4-17"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.telecom.cos.widget.DashedLine
+        android:id="@+id/dashedLine"
+        android:layout_width="wrap_content"
+        android:layout_height="20px" />
+
+    <WebView
+        android:id="@+id/newsdetails_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!--
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView 
+            android:id="@+id/news_detals_txtcontent"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+        
+    </ScrollView>
+    -->
+
+</LinearLayout>

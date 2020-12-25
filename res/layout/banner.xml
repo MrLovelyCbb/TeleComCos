@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/banner_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/Comic_competition"
+            style="@style/telecom_style_banner"
+            android:layout_marginLeft="10dip"
+            android:checked="true"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/Comic_text_competition" />
+
+        <RadioButton
+            android:id="@+id/Comic_impressive"
+            style="@style/telecom_style_banner"
+            android:text="@string/Comic_text_impressive"
+            android:layout_marginTop="5.0dip" />
+
+        <RadioButton
+            android:id="@+id/Comic_Cosplay"
+            style="@style/telecom_style_banner"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/Comic_text_Cosplay" />
+
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/telecom_index_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+         >
+    </GridView>
+
+</LinearLayout>

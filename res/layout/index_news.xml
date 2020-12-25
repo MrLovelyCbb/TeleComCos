@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/telecom_index_news_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl_competition_news"
+            style="@style/telecom_textview_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/telecom_index_news_icon"
+            android:gravity="center"
+            android:text="@string/Comic_text_News" />
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/telecom_news_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:dividerHeight="0dip"
+        android:divider="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        ></ListView>
+</LinearLayout>

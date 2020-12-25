@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="80.0px"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px" >
+
+        <EditText
+            android:id="@+id/register_edit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/telecom_edit_login"
+            android:hint="@string/strInputAccHint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="80.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/register_edit_account"
+            android:layout_alignLeft="@+id/register_edit_account"
+            android:layout_alignTop="@+id/register_edit_account"
+            android:layout_marginRight="20.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/telephone_number"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+
+        <Button
+            android:id="@+id/register_validatenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/register_edit_account"
+            android:layout_alignTop="@+id/register_edit_account"
+            android:layout_alignBottom="@+id/register_edit_account"
+            android:singleLine="true"
+            android:text="@string/get_validate_number"
+            android:background="@drawable/register_select"
+            android:textSize="10sp"
+            style="@style/telecom_txtcontent_textcolor"/>
+        
+        
+        <!-- 昵称  -->
+        <EditText
+            android:id="@+id/register_edit_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_edit_account"
+            android:layout_below="@+id/register_edit_account"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/telecom_edit_login"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/register_edit_nickname"
+            android:layout_alignTop="@+id/register_edit_nickname"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/strNickNameInputLabel"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+        
+        
+
+        <EditText
+            android:id="@+id/register_edit_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_edit_nickname"
+            android:layout_below="@+id/register_edit_nickname"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/telecom_edit_login"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/register_edit_pwd"
+            android:layout_alignTop="@+id/register_edit_pwd"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/strPswInputLabel"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/confirm_edit_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_edit_pwd"
+            android:layout_below="@+id/register_edit_pwd"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/telecom_edit_login"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="80.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/confirm_edit_pwd"
+            android:layout_alignTop="@+id/confirm_edit_pwd"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/confirm_password"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/validate_edit_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/confirm_edit_pwd"
+            android:layout_below="@+id/confirm_edit_pwd"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/telecom_edit_login"
+            android:maxLength="6"
+            android:paddingLeft="65.0sp"
+            android:saveEnabled="true"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/validate_edit_number"
+            android:layout_alignTop="@+id/validate_edit_number"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/validate_number"
+            android:textColor="#0071ab"
+            android:textSize="16.0dip" />
+        
+        <Button 
+            android:id="@+id/register_submit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/login_select"
+            android:text="@string/telecom_text_register"
+            android:layout_below="@+id/validate_edit_number"
+            android:layout_marginTop="15dip"
+            android:layout_centerHorizontal="true"
+            style="@style/telecom_textview_color"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>
